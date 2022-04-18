@@ -4,11 +4,15 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:MAUIAppBase.Views">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="THIS IS A LOGIN PAGE!"
-                   HorizontalOptions="Center"
-                   TextColor="Black"
-                   VerticalOptions="Center"/>
+        <StackLayout HorizontalOptions="Center">
+            <Label Text="Login" Style="{StaticResource LoginLabel}"></Label>
+            <Picker x:Name="UsernameEntry" Title="User" Margin="10" BindingContext="{Binding UserName}"></Picker>
+            <Entry x:Name="PasswordEntry" Style="{StaticResource LoginEntry}" Placeholder="Password" Text="{Binding Password}"></Entry>
+            <StackLayout Orientation="Horizontal" BackgroundColor="IndianRed">
+                <Switch></Switch>
+                <Label Text="Remember me?" FontAttributes="Italic" FontSize="Medium" VerticalOptions="Center"></Label>
+            </StackLayout>
+            <Button Text="Login" Command="{Binding LoginCommand}"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

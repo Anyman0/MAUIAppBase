@@ -209,6 +209,20 @@
         <Setter Property="FontFamily" Value="{StaticResource AppFont}" />
         <Setter Property="FontSize" Value="{StaticResource AppFontSize}" />
     </Style>
+    <!-- Below are the styles that define LOGIN-fields -->
+    <Style TargetType="Label" x:Key="LoginLabel">
+        <Setter Property="TextColor" Value="Green"></Setter>
+        <Setter Property="FontAttributes" Value="Bold"></Setter>
+        <Setter Property="VerticalOptions" Value="Center"></Setter>
+        <Setter Property="HorizontalOptions" Value="Center"></Setter>
+        <Setter Property="FontSize" Value="Header"></Setter>
+    </Style>
+
+    <Style TargetType="Entry" x:Key="LoginEntry">
+        <Setter Property="TextColor" Value="Black"></Setter>
+        <Setter Property="PlaceholderColor" Value="Black"></Setter>
+        <Setter Property="Margin" Value="10"></Setter>
+    </Style>
 
     <Style TargetType="ListView">
         <Setter Property="SeparatorColor" Value="{AppThemeBinding Light={StaticResource LightGray}, Dark={StaticResource DarkGray}}" />
