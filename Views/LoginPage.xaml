@@ -8,8 +8,8 @@
             <Label Text="Login" Style="{StaticResource LoginLabel}"></Label>
             <Picker x:Name="UsernameEntry" Title="User" Margin="10" BindingContext="{Binding UserName}"></Picker>
             <Entry x:Name="PasswordEntry" Style="{StaticResource LoginEntry}" Placeholder="Password" Text="{Binding Password}"></Entry>
-            <StackLayout Orientation="Horizontal" BackgroundColor="IndianRed">
-                <Switch></Switch>
+            <StackLayout Orientation="Horizontal" BackgroundColor="{Binding BackgroundColorChange}">
+                <Switch IsToggled="{Binding RememberMe, Mode=TwoWay}"></Switch>
                 <Label Text="Remember me?" FontAttributes="Italic" FontSize="Medium" VerticalOptions="Center"></Label>
             </StackLayout>
             <Button Text="Login" Command="{Binding LoginCommand}"></Button>

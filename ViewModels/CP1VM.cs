@@ -10,7 +10,7 @@ namespace MAUIAppBase.ViewModels
 {
     public class CP1VM : FunctionModel
     {
-        private Model1 model;        
+        private Model1 model;         
         public CP1VM()
         {
             model = new Model1()
@@ -36,7 +36,7 @@ namespace MAUIAppBase.ViewModels
             {
                 model.Id = value;
                 OnPropertyChanged("Id");
-                OnPropertyChanged("AllAbove");
+                OnPropertyChanged("AllAbove");                
             }
         }
 
@@ -46,8 +46,9 @@ namespace MAUIAppBase.ViewModels
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri(uri);
             string json = await client.GetStringAsync(api);
-            string[] data = JsonConvert.DeserializeObject<string[]>(json);            
+            string[] data = JsonConvert.DeserializeObject<string[]>(json);
         }
-       
+
+
     }
 }

@@ -41,7 +41,7 @@
             <ShellContent Title="LoginPage" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}"></ShellContent>
         </Tab>
     </FlyoutItem>
-
+    
     <!--
         Uncomment the below section to enable Shell Flyout item(s)
         And ensure appropriate page definitions are available for it work as expected
@@ -115,6 +115,6 @@
         <DataTemplate>
             <Grid>ContentHere</Grid>
         </DataTemplate>
-    </Shell.FlyoutFooterTemplate>
+    </Shell.FlyoutFooterTemplate>   
     -->    
 </Shell>

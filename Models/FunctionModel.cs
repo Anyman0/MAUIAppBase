@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -9,7 +11,7 @@ namespace MAUIAppBase.Models
 {
     public class FunctionModel : INotifyPropertyChanged
     {
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;         
         protected void OnPropertyChanged(string property)
         {
             var handler = PropertyChanged;
@@ -17,6 +19,7 @@ namespace MAUIAppBase.Models
             {
                 handler(this, new PropertyChangedEventArgs(property));
             }
-        }
+        }       
+        
     }
 }

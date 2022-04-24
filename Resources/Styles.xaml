@@ -16,6 +16,8 @@
     <Color x:Key="LightGray">#E5E5E1</Color>
     <Color x:Key="MidGray">#969696</Color>
     <Color x:Key="DarkGray">#505050</Color>
+    <Color x:Key="NotActiveRed">#C47979</Color>
+    <Color x:Key="ActiveGreen">#95C479</Color>
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}" />
     <SolidColorBrush x:Key="LightBrush" Color="{StaticResource Light}" />
     <SolidColorBrush x:Key="DarkBrush" Color="{StaticResource Dark}" />
@@ -39,7 +41,7 @@
     <Color x:Key="Blue100Accent">#3E8EED</Color>
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
-
+      
     <Style TargetType="ActivityIndicator">
         <Setter Property="Color" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
     </Style>

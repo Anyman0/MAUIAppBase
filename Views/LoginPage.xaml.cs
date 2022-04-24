@@ -9,5 +9,10 @@ namespace MAUIAppBase.Views
             InitializeComponent();
             BindingContext = new LoginVM();
         }
+
+        private void Switch_Toggled(object sender, ToggledEventArgs e)
+        {
+
+        }
     }
 }
